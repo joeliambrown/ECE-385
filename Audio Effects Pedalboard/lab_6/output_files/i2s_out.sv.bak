@@ -1,0 +1,7 @@
+module i2s_out (input CLK, SCLK, LRCLK, 
+					input [31:0] DIN, 
+					output DOUT);
+
+
+
+endmodule

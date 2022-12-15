@@ -1,0 +1,9 @@
+module Reg_File(input logic Clk, Reset, Run, Continue,
+					input logic [15:0] D_In,
+					input logic LD_Reg,
+					input logic [2:0] SR1, SR2, DR,
+					output logic [15:0] SR1_Out, SR2_Out);
+					
+					
+						
+endmodule

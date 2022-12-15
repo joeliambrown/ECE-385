@@ -1,0 +1,17 @@
+module MUX_2(input logic [15:0] D, D1,
+					input logic S,
+					output logic [15:0] D_Out);
+					
+					
+			always_comb
+			begin
+				unique case(S)
+					2'b00: D_Out <= D;
+					2'b01: D_Out <= D1;
+				endcase
+			end
+			
+			
+			
+			
+endmodule 

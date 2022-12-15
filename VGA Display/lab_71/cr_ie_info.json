@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "windows64",
+		"os_name" : "Windows 10",
+		"os_version" : "10.0"
+	},
+	"error" : {
+		"executable" : "quartus_map",
+		"comment" : "not_applicable",
+		"error_message" : "Access Violation at 0X00007FF88411B1B5",
+		"source_file" : "unknown",
+		"line" : "0",
+		"stack_trace" : "\t0x7ff88411b1b4: db_cdb_sgate + 0xb1b4 (CDB_SGATE_OTERM::adopt_fanouts + 0x24)\n\t0x7ff868bbb3c0: SYNTH_INFER + 0x2b3c0 (?select_read_data_from_smaller_write_data_mw@OPT_RAM_CANDIDATE@@IEAAXPEAV?$vector@PEAVCDB_SGATE_OTERM@@V?$allocator@PEAVCDB_SGATE_OTERM@@@std@@@std@@AEAV?$vector@PEAVCDB_SGATE_ITERM@@V?$allocator@PEAVCDB_SGATE_ITERM@@@std@@@3@_NHHHHVRAM_SECONDARY_SIGNALS@@1AEAV23@2PEAVQTL_BOOL_VECTOR@@2D2@Z + 0xa40)\n\t0x7ff868bc3d2d: SYNTH_INFER + 0x33d2d (?create_bypass_logic_mixed_width@OPT_RAM_CANDIDATE@@IEAAX_NIIIIAEAV?$vector@PEAVCDB_SGATE_ITERM@@V?$allocator@PEAVCDB_SGATE_ITERM@@@std@@@std@@1VRAM_SECONDARY_SIGNALS@@1AEAV?$vector@PEAVCDB_SGATE_OTERM@@V?$allocator@PEAVCDB_SGATE_OTERM@@@std@@@3@1PEAVCDB_SGATE_ITERM@@200@Z + 0x29d)\n\t0x7ff868bb9919: SYNTH_INFER + 0x29919 (?create_bypass_logic@OPT_RAM_CANDIDATE@@IEAAX_N0@Z + 0x3b9)\n\t0x7ff868bb8038: SYNTH_INFER + 0x28038 (?do_non_tdp_conversion@OPT_RAM_CANDIDATE@@IEAAXXZ + 0x108)\n\t0x7ff868bb680c: SYNTH_INFER + 0x2680c (?convert_to_megafunction@OPT_RAM_CANDIDATE@@UEAAXXZ + 0x3c)\n\t0x7ff868bb306f: SYNTH_INFER + 0x2306f (?opt_convert_candidates@@YAXAEAV?$vector@PEAVOPT_RAM_BLOCK_CANDIDATE@@V?$allocator@PEAVOPT_RAM_BLOCK_CANDIDATE@@@std@@@std@@@Z + 0x3f)\n\t0x7ff86d0fe958: SYNTH_OPT + 0x3e958 (RTL_SCRIPT::call_ram_rom_fns + 0x474)\n\t0x7ff86d0fbe00: SYNTH_OPT + 0x3be00 (?call_named_function@RTL_SCRIPT@@AEAAHPEBD00HHH@Z + 0x590)\n\t0x7ff86d100110: SYNTH_OPT + 0x40110 (RTL_SCRIPT::process_script + 0x4f4)\n\t0x7ff86d101039: SYNTH_OPT + 0x41039 (?opt_process_netlist_scripted@@YA_NPEAVCMP_FACADE@@PEAVCDB_SGATE_HIERARCHY@@PEAVBASEX_ELABORATE_INFO@@W4RTL_SCRIPT_ENUM@@_N@Z + 0x7a5)\n\t0x7ff86d0f9dda: SYNTH_OPT + 0x39dda (RTL_ROOT::process_sgate_netlist + 0x196)\n\t0x7ff8689e7fbd: synth_sgn + 0x157fbd (?high_level_synthesis@SGN_SYNTHESIS@@AEAAXXZ + 0x17d)\n\t0x7ff8689e897d: synth_sgn + 0x15897d (?process_current_stage@SGN_SYNTHESIS@@QEAAXXZ + 0x20d)\n\t0x7ff868953a7d: synth_sgn + 0xc3a7d (?synthesize_partition@SGN_EXTRACTOR@@AEAAXK@Z + 0x18d)\n\t0x7ff86895367f: synth_sgn + 0xc367f (?synthesis@SGN_EXTRACTOR@@AEAAXXZ + 0x1ff)\n\t0x7ff8689537e4: synth_sgn + 0xc37e4 (?synthesis_and_post_processing@SGN_EXTRACTOR@@QEAAXXZ + 0xc4)\n\t0x7ff8688a3350: synth_sgn + 0x13350 (?sgn_qic_full@@YA?AW4SGN_STATE_ENUM@@PEAVCMP_FACADE@@AEAV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAV?$vector@NV?$allocator@N@std@@@4@@Z + 0x2a0)\n\t0x7ff63f8e4351: quartus_map + 0x4351 (?qsyn_execute_sgn@@YA?AW4SGN_STATE_ENUM@@PEAVCMP_FACADE@@AEAV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@PEAVTHR_NAMED_PIPE@@3@Z + 0x131)\n\t0x7ff63f8f3f9c: quartus_map + 0x13f9c (?execute_core@QSYN_FRAMEWORK@@AEAA_NPEAVTHR_NAMED_PIPE@@0@Z + 0x12c)\n\t0x7ff63f8f3aa6: quartus_map + 0x13aa6 (?execute@QSYN_FRAMEWORK@@UEAA_NXZ + 0x496)\n\t0x7ff8dbea12bc: comp_qexe + 0x112bc (qexe_do_normal + 0x1ec)\n\t0x7ff8dbea6142: comp_qexe + 0x16142 (qexe_run + 0x432)\n\t0x7ff8dbea6e51: comp_qexe + 0x16e51 (?qexe_standard_main@@YAHPEAVQEXE_FRAMEWORK@@PEAPEBUQEXE_OPTION_DEFINITION@@HPEAPEBD@Z + 0xc1)\n\t0x7ff63f8fb08b: quartus_map + 0x1b08b (?qsyn_main@@YAHHPEAPEBD@Z + 0x51b)\n\t0x7ff8e5d62e98: CCL_MSG + 0x12e98 (?msg_main_thread@@YAPEAXPEAX@Z + 0x18)\n\t0x7ff8e5d6467e: CCL_MSG + 0x1467e (?msg_thread_wrapper@@YAPEAXP6APEAXPEAX@Z0@Z + 0x6e)\n\t0x7ff8e5e66660: ccl_mem + 0x16660 (?mem_thread_wrapper@@YAPEAXP6APEAXPEAX@Z0@Z + 0x70)\n\t0x7ff8e5d62761: CCL_MSG + 0x12761 (?msg_exe_main@@YAHHPEAPEBDP6AHH0@Z@Z + 0xa1)\n\t0x7ff63f909872: quartus_map + 0x29872 (__tmainCRTStartup + 0x10e)\n\t0x7ff904117033: KERNEL32 + 0x17033 (BaseThreadInitThunk + 0x13)\n\t0x7ff904dc26a0: ntdll + 0x526a0 (RtlUserThreadStart + 0x20)\n",
+		"subsystem" : "unknown"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "18.1.0",
+		"build" : "625",
+		"edition" : "Lite Edition"
+	}
+}

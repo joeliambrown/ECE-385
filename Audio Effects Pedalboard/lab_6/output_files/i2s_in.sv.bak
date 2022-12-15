@@ -1,0 +1,33 @@
+module i2s_in (input CLK, SCLK, LRCLK, DIN, 
+	output [31:0] DOUT);
+
+
+logic [31:0] dataL, dataR;
+logic outL, outR
+
+always_ff @ (posedge SCLK)
+	begin
+	
+	if (!LRCLK):
+		begin
+		dataL <= {dataL[30:0], DIN};
+	
+	
+		end
+	
+	if (LRCLK):
+		begin
+		dataR <= {dataR[30:0], DIN}
+		
+		end
+	
+	
+	end
+
+always_ff @ (posedge LRCLK)
+begin
+	dataL <= 32'h0000
+	dataR <= 32'h0000
+end
+
+endmodule

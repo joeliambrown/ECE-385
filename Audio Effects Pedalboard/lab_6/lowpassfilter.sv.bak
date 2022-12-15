@@ -1,0 +1,25 @@
+module lowpassfilter (input ENABLE,
+	input  [31:0] DINL, DINR,
+	output [31:0] DOUTL, DOUTR);
+	
+	
+always_comb
+begin
+	
+	//apply lpf
+	if (ENABLE)
+		begin
+		DOUTL = {DINL[30], dataL, DINL[6:0]};
+		DOUTR = {DINR[30], dataR, DINR[6:0]};
+		end
+	//bypass
+	else
+		begin
+		DOUTL = DINL;
+		DOUTR = DINR;
+		end
+
+end
+	
+endmodule
+	

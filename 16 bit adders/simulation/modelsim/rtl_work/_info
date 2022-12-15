@@ -1,0 +1,236 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/simulation/modelsim
+vadder2
+Z1 DXx6 sv_std 3 std 0 22 ;edk3;YfCLjCm[Hd=`UGQ2
+Z2 !s110 1664253597
+!i10b 1
+!s100 O4n<Sn?3SM8RU17KWJG?`3
+IBJ2KPHmG5J`66UDPUFNmd2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 adder2_sv_unit
+S1
+R0
+w1664253524
+8C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20/adder2.sv
+FC:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20/adder2.sv
+L0 1
+Z4 OV;L;10.6d;65
+r1
+!s85 0
+31
+Z5 !s108 1664253597.000000
+!s107 C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20/adder2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20|C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20/adder2.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20
+Z8 tCvgOpt 0
+vcontrol
+R1
+R2
+!i10b 1
+!s100 4^T<MW:^Hhf;SGQ2_b=Kk3
+ImF?<6B[<YGC3cCggk<OF82
+R3
+!s105 control_sv_unit
+S1
+R0
+Z9 w1663309886
+8C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20/control.sv
+FC:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20/control.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20/control.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20|C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20/control.sv|
+!i113 1
+R6
+R7
+R8
+vfull_adder
+R1
+R2
+!i10b 1
+!s100 J[jYmeSUK8BPA^`BmPDz53
+IHj;QUkgN3CZA;4Ncz1l513
+R3
+!s105 full_adder_sv_unit
+S1
+R0
+w1663313696
+8C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/full_adder.sv
+FC:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/full_adder.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/full_adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3|C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/full_adder.sv|
+!i113 1
+R6
+Z10 !s92 -sv -work work +incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3
+R8
+vHexDriver
+R1
+R2
+!i10b 1
+!s100 F7dDJLKONLDlAhT4ll@HA3
+ID:b0PVV@<94`K4T;Ngnb83
+R3
+!s105 HexDriver_sv_unit
+S1
+R0
+R9
+8C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20/HexDriver.sv
+FC:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20/HexDriver.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z11 !s108 1664253596.000000
+!s107 C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20/HexDriver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20|C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20/HexDriver.sv|
+!i113 1
+R6
+R7
+R8
+n@hex@driver
+vreg_17
+R1
+Z12 !s110 1664253596
+!i10b 1
+!s100 TzXnY51aIaIZFVKcdA[Wn1
+I[oZ2RRFXoc`OQ5<kWL@aP1
+R3
+!s105 reg_17_sv_unit
+S1
+R0
+R9
+8C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20/reg_17.sv
+FC:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20/reg_17.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20/reg_17.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20|C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20/reg_17.sv|
+!i113 1
+R6
+R7
+R8
+vripple_adder
+R1
+R12
+!i10b 1
+!s100 @FEJz_E0@bc]5UV07_ch:0
+IOanFXN[UYa>9N>6m@HkEj2
+R3
+!s105 ripple_adder_sv_unit
+S1
+R0
+w1663349090
+8C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20/ripple_adder.sv
+FC:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20/ripple_adder.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20/ripple_adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20|C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20/ripple_adder.sv|
+!i113 1
+R6
+R7
+R8
+vripple_adder_4
+R1
+R2
+!i10b 1
+!s100 CXzVzVUeScZL3FlY:YMkf3
+ICFe?n6iiL1jLXdAg7=^eo0
+R3
+!s105 ripple_adder_4_sv_unit
+S1
+R0
+w1663346708
+8C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/ripple_adder_4.sv
+FC:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/ripple_adder_4.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/ripple_adder_4.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3|C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/ripple_adder_4.sv|
+!i113 1
+R6
+R10
+R8
+vrouter
+R1
+R12
+!i10b 1
+!s100 0oS5^3aI5<4lR1GZZPnaj2
+If>9z;XZ;1DB?@<R9XAS><1
+R3
+!s105 router_sv_unit
+S1
+R0
+R9
+8C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20/router.sv
+FC:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20/router.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20/router.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20|C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/385_lab4_adders_provided_fa20/router.sv|
+!i113 1
+R6
+R7
+R8
+vtestbench_adder
+R1
+R2
+!i10b 1
+!s100 IcRRPfc:kHIekQhBNBK]=0
+Ief2]j<d5:2z?@?Q;<_eHJ2
+R3
+!s105 testbench_adder_sv_unit
+S1
+R0
+w1664253536
+8C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/output_files/testbench_adder.sv
+FC:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/output_files/testbench_adder.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/output_files/testbench_adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/output_files|C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/output_files/testbench_adder.sv|
+!i113 1
+R6
+!s92 -sv -work work +incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/output_files
+R8

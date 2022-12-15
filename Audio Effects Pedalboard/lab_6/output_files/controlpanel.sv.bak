@@ -1,0 +1,9 @@
+module controlpanel (input CLK, 
+							input [1:0] SELECT, BUTTON,
+							output GAIN, BITDEPTH, CLIP, DELAYTIME
+);
+
+
+
+
+endmodule

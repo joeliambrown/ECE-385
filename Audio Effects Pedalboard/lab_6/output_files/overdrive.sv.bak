@@ -1,0 +1,27 @@
+module overdrive (input ENABLE,
+	input [2:0] BITDEPTH,
+	input  [31:0] DINL, DINR,
+	output [31:0] DOUTL, DOUTR);
+
+logic [23:0] dataL, dataR;
+logic [4:0] actualbitdepth;
+assign actualbitdepth = {2'b00, BITDEPTH} + 5'b01100;
+assign dataL = DINL[30:7] >> actualbitdepth;
+assign dataR = DINR[30:7] >> actualbitdepth;	
+	
+always_comb
+begin
+	if (ENABLE)
+		begin
+		DOUTL = {DINL[30], dataL << actualbitdepth, DINL[6:0]};
+		DOUTR = {DINL[30], dataR << actualbitdepth, DINL[6:0]};
+		end
+	else
+		begin
+		DOUTL = DINL;
+		DOUTR = DINR;
+		end
+end
+
+
+endmodule

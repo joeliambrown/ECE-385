@@ -1,0 +1,29 @@
+module tremolo (input ENABLE, LRCLK
+	input [2:0] TREMFREQ,
+	input  [31:0] DINL, DINR,
+	output [31:0] DOUTL, DOUTR);
+	
+	
+logic [23:0] dataL, dataR; 
+
+always_comb
+begin
+
+	//apply tremolo
+	if (ENABLE)
+		begin
+		DOUTL = DINL;
+		DOUTR = DINR;
+		end
+	//bypass
+	else
+		begin
+		DOUTL = DINL;
+		DOUTR = DINR;
+		end
+end
+	
+	
+
+	
+endmodule

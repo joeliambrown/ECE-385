@@ -1,0 +1,4 @@
+module delay (input ENABLE,
+	input [2:0] DELAYTIME,
+	input  [31:0] DINL, DINR,
+	output [31:0] DOUTL, DOUTR);

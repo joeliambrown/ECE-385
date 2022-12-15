@@ -1,0 +1,13 @@
+
+
+C:/intelFPGA_lite/18.1/Documents/ECE385/lab_71/ram.v
+
+Nov 03 11PM:51:41>: The following design file, which has identical name but a different extension 
+from the specified variation file, already exists in the working directory:
+
+ram.vhd
+
+This may create a conflict of design files and/or lead to undesirable side
+effects.
+
+Is it OK to continue file generation?

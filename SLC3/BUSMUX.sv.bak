@@ -1,0 +1,18 @@
+module BUSMUX(input logic [15:0] PC_Out ,MDR_Out , ALU_Out, MAR_Out,
+					input logic GatePC, GateMDR, GateALU, GateMARMUX,
+					output logic [15:0] D_Out);
+					
+					D_Out = 16'bzzzzzzzzzzzzzzzz;
+					always_comb
+						begin
+							if(GatePC)
+								D_Out <= PC_Out;
+							else if(GateMDR)
+								D_Out <= MDR_Out;
+							else if(GateMARMUX)
+								D_Out <= MAR_Out;
+							else if(GateALU)
+								D_Out <= ALU_Out;
+					
+					
+endmodule 

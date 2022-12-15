@@ -1,0 +1,86 @@
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+
+# Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+# File: C:\intelFPGA_lite\18.1\Documents\ECE385\lab_3\lab_3_pin.csv
+# Generated on: Fri Sep 16 02:49:41 2022
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus Prime software.
+
+To,Direction,Location,I/O Bank,VREF Group,Fitter Location,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair,Strict Preservation
+Clk,Input,PIN_P11,3,B3_N0,PIN_K8,,,,,,
+HEX0[6],Output,PIN_C17,7,B7_N0,PIN_C6,,,,,,
+HEX0[5],Output,PIN_D17,7,B7_N0,PIN_J10,,,,,,
+HEX0[4],Output,PIN_E16,7,B7_N0,PIN_A4,,,,,,
+HEX0[3],Output,PIN_C16,7,B7_N0,PIN_A6,,,,,,
+HEX0[2],Output,PIN_C15,7,B7_N0,PIN_E9,,,,,,
+HEX0[1],Output,PIN_E15,7,B7_N0,PIN_D10,,,,,,
+HEX0[0],Output,PIN_C14,7,B7_N0,PIN_D7,,,,,,
+HEX1[6],Output,PIN_B17,7,B7_N0,PIN_L15,,,,,,
+HEX1[5],Output,PIN_A18,7,B7_N0,PIN_L14,,,,,,
+HEX1[4],Output,PIN_A17,7,B7_N0,PIN_F20,,,,,,
+HEX1[3],Output,PIN_B16,7,B7_N0,PIN_C22,,,,,,
+HEX1[2],Output,PIN_E18,6,B6_N0,PIN_F21,,,,,,
+HEX1[1],Output,PIN_D18,6,B6_N0,PIN_E21,,,,,,
+HEX1[0],Output,PIN_C18,7,B7_N0,PIN_D22,,,,,,
+HEX2[6],Output,PIN_B22,6,B6_N0,PIN_L19,,,,,,
+HEX2[5],Output,PIN_C22,6,B6_N0,PIN_AA10,,,,,,
+HEX2[4],Output,PIN_B21,6,B6_N0,PIN_W9,,,,,,
+HEX2[3],Output,PIN_A21,6,B6_N0,PIN_W18,,,,,,
+HEX2[2],Output,PIN_B19,7,B7_N0,PIN_H18,,,,,,
+HEX2[1],Output,PIN_A20,7,B7_N0,PIN_A9,,,,,,
+HEX2[0],Output,PIN_B20,6,B6_N0,PIN_G1,,,,,,
+HEX3[6],Output,PIN_E17,6,B6_N0,PIN_D21,,,,,,
+HEX3[5],Output,PIN_D19,6,B6_N0,PIN_E10,,,,,,
+HEX3[4],Output,PIN_C20,6,B6_N0,PIN_AA2,,,,,,
+HEX3[3],Output,PIN_C19,7,B7_N0,PIN_Y21,,,,,,
+HEX3[2],Output,PIN_E21,6,B6_N0,PIN_D13,,,,,,
+HEX3[1],Output,PIN_E22,6,B6_N0,PIN_G17,,,,,,
+HEX3[0],Output,PIN_F21,6,B6_N0,PIN_M22,,,,,,
+HEX4[6],Output,PIN_F20,6,B6_N0,PIN_AB6,,,,,,
+HEX4[5],Output,PIN_F19,6,B6_N0,PIN_W3,,,,,,
+HEX4[4],Output,PIN_H19,6,B6_N0,PIN_AA8,,,,,,
+HEX4[3],Output,PIN_J18,6,B6_N0,PIN_H11,,,,,,
+HEX4[2],Output,PIN_E19,6,B6_N0,PIN_Y13,,,,,,
+HEX4[1],Output,PIN_E20,6,B6_N0,PIN_B8,,,,,,
+HEX4[0],Output,PIN_F18,6,B6_N0,PIN_A20,,,,,,
+HEX5[6],Output,PIN_N20,6,B6_N0,PIN_B7,,,,,,
+HEX5[5],Output,PIN_N19,6,B6_N0,PIN_B16,,,,,,
+HEX5[4],Output,PIN_M20,6,B6_N0,PIN_AA1,,,,,,
+HEX5[3],Output,PIN_N18,6,B6_N0,PIN_M3,,,,,,
+HEX5[2],Output,PIN_L18,6,B6_N0,PIN_W15,,,,,,
+HEX5[1],Output,PIN_K20,6,B6_N0,PIN_C12,,,,,,
+HEX5[0],Output,PIN_J20,6,B6_N0,PIN_AB19,,,,,,
+LED[9],Output,PIN_B11,7,B7_N0,PIN_B14,,,,,,
+LED[8],Output,PIN_A11,7,B7_N0,PIN_C20,,,,,,
+LED[7],Output,PIN_D14,7,B7_N0,PIN_A10,,,,,,
+LED[6],Output,PIN_E14,7,B7_N0,PIN_H3,,,,,,
+LED[5],Output,PIN_C13,7,B7_N0,PIN_Y14,,,,,,
+LED[4],Output,PIN_D13,7,B7_N0,PIN_W13,,,,,,
+LED[3],Output,PIN_B10,7,B7_N0,PIN_V15,,,,,,
+LED[2],Output,PIN_A10,7,B7_N0,PIN_C18,,,,,,
+LED[1],Output,PIN_A9,7,B7_N0,PIN_AA16,,,,,,
+LED[0],Output,PIN_A8,7,B7_N0,PIN_W10,,,,,,
+Reset_Clear,Input,PIN_B8,7,B7_N0,PIN_L2,,,,,,
+Run_Accumulate,Input,PIN_A7,7,B7_N0,PIN_E18,,,,,,
+SW[9],Input,PIN_F15,7,B7_N0,PIN_AB20,,,,,,
+SW[8],Input,PIN_B14,7,B7_N0,PIN_W8,,,,,,
+SW[7],Input,PIN_A14,7,B7_N0,PIN_N18,,,,,,
+SW[6],Input,PIN_A13,7,B7_N0,PIN_M20,,,,,,
+SW[5],Input,PIN_B12,7,B7_N0,PIN_N20,,,,,,
+SW[4],Input,PIN_A12,7,B7_N0,PIN_N19,,,,,,
+SW[3],Input,PIN_C12,7,B7_N0,PIN_C7,,,,,,
+SW[2],Input,PIN_D12,7,B7_N0,PIN_D9,,,,,,
+SW[1],Input,PIN_C11,7,B7_N0,PIN_A5,,,,,,
+SW[0],Input,PIN_C10,7,B7_N0,PIN_D8,,,,,,

@@ -1,0 +1,7 @@
+module MUX_4(input logic [15:0] D, D1, D2, D3,
+					input logic [1:0] S,
+					output logic [15:0] Out);
+					
+					
+					
+endmodule 

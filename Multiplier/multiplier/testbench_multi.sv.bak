@@ -1,0 +1,9 @@
+module testbench_multi();
+
+
+if (ErrorCnt == 0)
+	$display("Success!");  // Command line output in ModelSim
+else
+	$display("%d error(s) detected. Try again!", ErrorCnt);
+end
+endmodule 

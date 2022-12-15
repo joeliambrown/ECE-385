@@ -1,0 +1,13 @@
+module gainstager (input CLK, SCLK, LRCLK,
+	input  [31:0] DINL, DINR,
+	output [31:0] DOUTL, DOUTR);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+endmodule

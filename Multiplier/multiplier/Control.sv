@@ -1,0 +1,235 @@
+module control (input  logic Clk, RLC, Run, M, Reset,
+                output logic Shift_En, Ld_A_X, Ld_B, SUBTRACT, Clr_A_X, Myeah );
+
+    // Declare signals curr_state, next_state of type enum
+    // with enum values of A, B, ..., F as the state values
+	 // Note that the length implies a max of 8 states, so you will need to bump this up for 8-bits
+    enum logic [4:0] {A, B, C, D, E, F, G, H, I, J, K, L, M1, N, O, P, Q, R, S}   curr_state, next_state; 
+
+	//updates flip flop, current state is the only one
+    always_ff @ (posedge Clk)  
+    begin
+        if (Reset)
+            curr_state <= A;
+        else 
+            curr_state <= next_state;
+    end
+
+    // Assign outputs based on state
+	always_comb
+    begin
+        
+		  next_state  = curr_state; //required because I haven't enumerated all possibilities below
+        unique case (curr_state) 
+
+            A :    if (Run)
+                       next_state = B;
+            B :    next_state = C;
+            C :    next_state = D;
+            D :    next_state = E;
+            E :    next_state = F;
+				F :    next_state = G;
+            G :    next_state = H;
+            H :    next_state = I;
+            I :    next_state = J;
+				J :    next_state = K;
+				K :    next_state = L;
+				L :    next_state = M1;
+				M1 :    next_state = N;
+				N :    next_state = O;
+				O :    next_state = P;
+				P :    next_state = Q;
+				Q :    next_state = R;
+				R :    next_state = S;
+            S :    if (~Run) 
+                       next_state = A;
+							  
+        endcase
+   
+		  // Assign outputs based on ‘state’
+        case (curr_state) 
+	   	   A: 
+	         begin
+                Ld_A_X = 1'b0;
+                Ld_B = RLC;
+                Shift_En = 1'b0;
+					 SUBTRACT = 1'b0;
+					 Clr_A_X = RLC;
+					 Myeah = M;
+		      end
+				B: 
+	         begin
+                Ld_A_X = 1'b0;
+                Ld_B = 1'b0;
+                Shift_En = 1'b0;
+					 SUBTRACT = 1'b0;
+					 Clr_A_X = 1'b1;
+					 Myeah = M;
+		      end
+				C: 
+	         begin
+                Ld_A_X = 1'b1;
+                Ld_B = 1'b0;
+                Shift_En = 1'b0;
+					 SUBTRACT = 1'b0;
+					 Clr_A_X = 1'b0;
+					 Myeah = M;
+		      end
+				D: 
+	         begin
+                Ld_A_X = 1'b0;
+                Ld_B = 1'b0;
+                Shift_En = 1'b1;
+					 SUBTRACT = 1'b0;
+					 Clr_A_X = 1'b0;
+					 Myeah = M;
+		      end
+				//first shift complete
+				E: 
+	         begin
+                Ld_A_X = 1'b1;
+                Ld_B = 1'b0;
+                Shift_En = 1'b0;
+					 SUBTRACT = 1'b0;
+					 Clr_A_X = 1'b0;
+					 Myeah = M;
+		      end
+				F: 
+	         begin
+                Ld_A_X = 1'b0;
+                Ld_B = 1'b0;
+                Shift_En = 1'b1;
+					 SUBTRACT = 1'b0;
+					 Clr_A_X = 1'b0;
+					 Myeah = M;
+		      end
+				//second shift complete
+				G:
+	         begin
+                Ld_A_X = 1'b1;
+                Ld_B = 1'b0;
+                Shift_En = 1'b0;
+					 SUBTRACT = 1'b0;
+					 Clr_A_X = 1'b0;
+					 Myeah = M;
+		      end
+				H: 
+	         begin
+                Ld_A_X = 1'b0;
+                Ld_B = 1'b0;
+                Shift_En = 1'b1;
+					 SUBTRACT = 1'b0;
+					 Clr_A_X = 1'b0;
+					 Myeah = M;
+		      end
+				//third shift complete
+				I:
+	         begin
+                Ld_A_X = 1'b1;
+                Ld_B = 1'b0;
+                Shift_En = 1'b0;
+					 SUBTRACT = 1'b0;
+					 Clr_A_X = 1'b0;
+					 Myeah = M;
+		      end
+				J: 
+	         begin
+                Ld_A_X = 1'b0;
+                Ld_B = 1'b0;
+                Shift_En = 1'b1;
+					 SUBTRACT = 1'b0;
+					 Clr_A_X = 1'b0;
+					 Myeah = M;
+		      end
+				//fourth shift complete
+				K: 
+	         begin
+                Ld_A_X = 1'b1;
+                Ld_B = 1'b0;
+                Shift_En = 1'b0;
+					 SUBTRACT = 1'b0;
+					 Clr_A_X = 1'b0;
+					 Myeah = M;
+		      end
+				L: 
+	         begin
+                Ld_A_X = 1'b0;
+                Ld_B = 1'b0;
+                Shift_En = 1'b1;
+					 SUBTRACT = 1'b0;
+					 Clr_A_X = 1'b0;
+					 Myeah = M;
+		      end
+				//fifth shift complete
+				M1: 
+	         begin
+                Ld_A_X = 1'b1;
+                Ld_B = 1'b0;
+                Shift_En = 1'b0;
+					 SUBTRACT = 1'b0;
+					 Clr_A_X = 1'b0;
+					 Myeah = M;
+		      end
+				N: 
+	         begin
+                Ld_A_X = 1'b0;
+                Ld_B = 1'b0;
+                Shift_En = 1'b1;
+					 SUBTRACT = 1'b0;
+					 Clr_A_X = 1'b0;
+					 Myeah = M;
+		      end
+				//sixth shift complete
+				O: 
+	         begin
+                Ld_A_X = 1'b1;
+                Ld_B = 1'b0;
+                Shift_En = 1'b0;
+					 SUBTRACT = 1'b0;
+					 Clr_A_X = 1'b0;
+					 Myeah = M;
+		      end
+				P: 
+	         begin
+                Ld_A_X = 1'b0;
+                Ld_B = 1'b0;
+                Shift_En = 1'b1;
+					 SUBTRACT = 1'b1;
+					 Clr_A_X = 1'b0;
+					 Myeah = M;
+		      end
+				//seventh shift complete
+				Q: 
+	         begin
+                Ld_A_X = 1'b1;
+                Ld_B = 1'b0;
+                Shift_En = 1'b0;
+					 SUBTRACT = 1'b1;
+					 Clr_A_X = 1'b0;
+					 Myeah = M;
+		      end
+				R: 
+	         begin
+                Ld_A_X = 1'b0;
+                Ld_B = 1'b0;
+                Shift_En = 1'b1;
+					 SUBTRACT = 1'b1;
+					 Clr_A_X = 1'b0;
+					 Myeah = M;
+		      end
+				//shifting done. Go to wait state until Run is low.
+	   	   S: 
+		      begin
+                Ld_A_X = 1'b0;
+                Ld_B = 1'b0;
+                Shift_En = 1'b0;
+					 SUBTRACT = 1'b0;
+					 Clr_A_X = 1'b0;
+					 Myeah = M;
+		      end
+	   	   
+		      
+        endcase
+    end
+
+endmodule

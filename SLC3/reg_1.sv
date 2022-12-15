@@ -1,0 +1,22 @@
+module reg_1 (input  logic Clk, Reset, Load,
+              input  logic  D,
+              output logic  Data_Out);
+
+    logic Data_Next;
+	 
+    always_ff @ (posedge Clk)
+    begin
+	 	 Data_Out <= Data_Next;
+	 end
+			  
+		
+	always_comb 
+	begin
+		Data_Next = Data_Out;
+		if (Reset)
+			Data_Next = 1'b0;
+		else if (Load)
+			Data_Next = D;
+	end
+
+endmodule 

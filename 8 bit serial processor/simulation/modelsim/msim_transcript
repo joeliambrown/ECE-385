@@ -1,0 +1,213 @@
+# Reading C:/intelFPGA_pro/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do 8_bit_serial_processor_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.6d Lib Mapping Utility 2018.02 Feb 24 2018
+# vmap work rtl_work 
+# Copying C:/intelFPGA_pro/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit {C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit/Synchronizers.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 11:23:51 on Sep 23,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit" C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit/Synchronizers.sv 
+# -- Compiling module sync
+# -- Compiling module sync_r0
+# -- Compiling module sync_r1
+# 
+# Top level modules:
+# 	sync
+# 	sync_r0
+# 	sync_r1
+# End time: 11:23:52 on Sep 23,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit {C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit/Router.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 11:23:52 on Sep 23,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit" C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit/Router.sv 
+# -- Compiling module router
+# 
+# Top level modules:
+# 	router
+# End time: 11:23:52 on Sep 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit {C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit/Reg_4.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 11:23:52 on Sep 23,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit" C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit/Reg_4.sv 
+# -- Compiling module reg_4
+# 
+# Top level modules:
+# 	reg_4
+# End time: 11:23:52 on Sep 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit {C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit/HexDriver.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 11:23:52 on Sep 23,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit" C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit/HexDriver.sv 
+# -- Compiling module HexDriver
+# 
+# Top level modules:
+# 	HexDriver
+# End time: 11:23:52 on Sep 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit {C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit/Control.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 11:23:52 on Sep 23,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit" C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit/Control.sv 
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# End time: 11:23:53 on Sep 23,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit {C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit/compute.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 11:23:53 on Sep 23,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit" C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit/compute.sv 
+# -- Compiling module compute
+# 
+# Top level modules:
+# 	compute
+# End time: 11:23:53 on Sep 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit {C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit/Register_unit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 11:23:53 on Sep 23,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit" C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit/Register_unit.sv 
+# -- Compiling module register_unit
+# 
+# Top level modules:
+# 	register_unit
+# End time: 11:23:53 on Sep 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor {C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/8_bit_serial_processor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 11:23:53 on Sep 23,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor" C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/8_bit_serial_processor.sv 
+# -- Compiling module Processor
+# 
+# Top level modules:
+# 	Processor
+# End time: 11:23:53 on Sep 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit {C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit/testbench_8.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 11:23:53 on Sep 23,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit" C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit/testbench_8.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 11:23:53 on Sep 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
+# Start time: 11:23:53 on Sep 23,2022
+# Loading sv_std.std
+# Loading work.testbench
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# Loading work.Processor
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# Loading work.register_unit
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# Loading work.reg_4
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# Loading work.compute
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# Loading work.router
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# Loading work.control
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# Loading work.HexDriver
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# Loading work.sync
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'fiftyfivenm_ver' at "fiftyfivenm_ver".
+# No such file or directory. (errno = ENOENT)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1000 ns
+# ** Warning: (vsim-8315) C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit/Control.sv(25): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/processor0/control_unit
+# ** Warning: (vsim-8315) C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit/Router.sv(17): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/processor0/router
+# ** Warning: (vsim-8315) C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit/Router.sv(7): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/processor0/router
+# ** Warning: (vsim-8315) C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit/compute.sv(8): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/processor0/compute_unit
+# ** Warning: (vsim-8315) C:/intelFPGA_lite/18.1/Documents/ECE385/8_bit_serial_processor/logic_processor_4bit/Control.sv(25): No condition is true in the unique/priority if/case statement.
+#    Time: 10 ns  Iteration: 2  Instance: /testbench/processor0/control_unit
+# Success!
+# End time: 13:27:49 on Sep 23,2022, Elapsed time: 2:03:56
+# Errors: 36, Warnings: 5

@@ -1,0 +1,6 @@
+module ALU(input logic Clk, Reset, Run, Continue,
+				input logic [15:0] A, B,
+				input logic [1:0] ALUK,
+				output logic [15:0] D_Out);
+				
+endmodule

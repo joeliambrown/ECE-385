@@ -1,0 +1,83 @@
+module multiplier(input logic   Clk,     // Internal
+                                Reset_Load_Clear,   // Push button 0
+                                Run,   // Push button 1
+                  input  logic [7:0]  Din,     // input data
+                  output logic [7:0]  Aval,    
+                                Bval,   
+                  output logic [6:0]  AhexL,
+                                AhexU,
+                                BhexL,
+                                BhexU,
+                  output logic  Xval);
+
+						
+						logic Reset_Load_Clear_SH, Run_SH;
+						logic SUBTRACT, Ld_B, Ld_A_X, S, Clr_A_X;
+						logic M, Ain, Xin;
+						logic X;
+						logic [7:0] A, B, Din_S;
+						
+						assign Aval = A;
+						assign Bval = B;
+						assign Xval = X;
+						
+register_unit    reg_unit (
+                        .Clk(Clk),
+                        .Reset(Clr_A_X),
+                        .X_in(Xin), 
+								.Ld_AX(Ld_A_X), 
+								.Ld_B(Ld_B), 
+                        .Shift_En(S),
+                        .SW(Din_S),
+							   .A_in(Ain),
+                        .M(M), 
+							   .X(X),
+                        .A(A),
+                        .B(B) );
+								
+ripple_adder_9   adder (
+							.A(A),	
+							.SW(Din_S),
+							.M(M),
+							.cin(SUBTRACT),
+							.SA(Ain),
+							.SX(Xin),
+							.cout(IDONTCARE) );
+							
+control          control_unit (
+									.Clk(Clk),
+									.RLC(Reset_Load_Clear_SH),
+									.Run(Run_SH),
+									.M(M),
+									.Reset(1'b0),
+									.Shift_En(S),
+									.Ld_A_X,
+									.Ld_B,
+									.SUBTRACT,
+									.Clr_A_X );
+
+								
+								
+								
+								
+		
+	 HexDriver        HexAL (
+                        .In0(A[3:0]),
+                        .Out0(AhexL) );
+	 HexDriver        HexBL (
+                        .In0(B[3:0]),
+                        .Out0(BhexL) );
+								
+	 
+	 HexDriver        HexAU (
+                        .In0(A[7:4]),
+                        .Out0(AhexU) );	
+	 HexDriver        HexBU (
+                       .In0(B[7:4]),
+                        .Out0(BhexU) );
+								
+								
+	  sync button_sync[1:0] (Clk, {Reset_Load_Clear, Run}, {Reset_Load_Clear_SH, Run_SH});
+	  sync Din_sync[7:0] (Clk, Din, Din_S);
+
+endmodule 

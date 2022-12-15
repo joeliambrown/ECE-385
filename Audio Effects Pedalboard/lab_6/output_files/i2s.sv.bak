@@ -1,0 +1,11 @@
+module i2s (input SCLK, LRCLK, DIN, DOUT);
+
+
+
+
+
+
+
+
+
+endmodule

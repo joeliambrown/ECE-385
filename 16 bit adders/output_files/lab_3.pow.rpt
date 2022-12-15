@@ -1,0 +1,389 @@
+Power Analyzer report for lab_3
+Tue Sep 27 00:47:44 2022
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Parallel Compilation
+  3. Power Analyzer Summary
+  4. Power Analyzer Settings
+  5. Indeterminate Toggle Rates
+  6. Operating Conditions Used
+  7. Thermal Power Dissipation by Block
+  8. Thermal Power Dissipation by Block Type
+  9. Thermal Power Dissipation by Hierarchy
+ 10. Core Dynamic Thermal Power Dissipation by Clock Domain
+ 11. Current Drawn from Voltage Supplies Summary
+ 12. VCCIO Supply Current Drawn by I/O Bank
+ 13. VCCIO Supply Current Drawn by Voltage
+ 14. Confidence Metric Details
+ 15. Signal Activities
+ 16. Power Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.04        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   1.2%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------+
+; Power Analyzer Summary                                                                    ;
++----------------------------------------+--------------------------------------------------+
+; Power Analyzer Status                  ; Successful - Tue Sep 27 00:47:44 2022            ;
+; Quartus Prime Version                  ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition      ;
+; Revision Name                          ; lab_3                                            ;
+; Top-level Entity Name                  ; adder2                                           ;
+; Family                                 ; MAX 10                                           ;
+; Device                                 ; 10M50DAF484C7G                                   ;
+; Power Models                           ; Final                                            ;
+; Total Thermal Power Dissipation        ; 105.34 mW                                        ;
+; Core Dynamic Thermal Power Dissipation ; 1.58 mW                                          ;
+; Core Static Thermal Power Dissipation  ; 89.97 mW                                         ;
+; I/O Thermal Power Dissipation          ; 13.78 mW                                         ;
+; Power Estimation Confidence            ; Low: user provided insufficient toggle rate data ;
++----------------------------------------+--------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Power Analyzer Settings                                                                                                  ;
++------------------------------------------------------------------+---------------------------------------+---------------+
+; Option                                                           ; Setting                               ; Default Value ;
++------------------------------------------------------------------+---------------------------------------+---------------+
+; Use smart compilation                                            ; Off                                   ; Off           ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                                    ; On            ;
+; Enable compact report table                                      ; Off                                   ; Off           ;
+; Default Power Input I/O Toggle Rate                              ; 12.5%                                 ; 12.5%         ;
+; Preset Cooling Solution                                          ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ;               ;
+; Board thermal model                                              ; None (CONSERVATIVE)                   ;               ;
+; Default Power Toggle Rate                                        ; 12.5%                                 ; 12.5%         ;
+; Use vectorless estimation                                        ; On                                    ; On            ;
+; Use Input Files                                                  ; Off                                   ; Off           ;
+; Filter Glitches in VCD File Reader                               ; On                                    ; On            ;
+; Power Analyzer Report Signal Activity                            ; Off                                   ; Off           ;
+; Power Analyzer Report Power Dissipation                          ; Off                                   ; Off           ;
+; Device Power Characteristics                                     ; TYPICAL                               ; TYPICAL       ;
+; Automatically Compute Junction Temperature                       ; On                                    ; On            ;
+; Specified Junction Temperature                                   ; 25                                    ; 25            ;
+; Ambient Temperature                                              ; 25                                    ; 25            ;
+; Use Custom Cooling Solution                                      ; Off                                   ; Off           ;
+; Board Temperature                                                ; 25                                    ; 25            ;
++------------------------------------------------------------------+---------------------------------------+---------------+
+
+
++-------------------------------------------+
+; Indeterminate Toggle Rates                ;
++-------------+-----------------------------+
+; Node        ; Reason                      ;
++-------------+-----------------------------+
+; Reset_Clear ; No valid clock domain found ;
++-------------+-----------------------------+
+
+
++-------------------------------------------------------------------------+
+; Operating Conditions Used                                               ;
++---------------------------------------------+---------------------------+
+; Setting                                     ; Value                     ;
++---------------------------------------------+---------------------------+
+; Device power characteristics                ; Typical                   ;
+;                                             ;                           ;
+; Voltages                                    ;                           ;
+;     VCC                                     ; 1.20 V                    ;
+;     VCCA                                    ; 2.50 V                    ;
+;     VCCD_PLL                                ; 1.20 V                    ;
+;     VCCINT                                  ; 1.20 V                    ;
+;     VCCA_ADC                                ; 2.50 V                    ;
+;     2.5 V I/O Standard                      ; 2.5 V                     ;
+;     2.5 V Schmitt Trigger I/O Standard      ; 2.5 V                     ;
+;                                             ;                           ;
+; Auto computed junction temperature          ; 25.9 degrees Celsius      ;
+;     Ambient temperature                     ; 25.0 degrees Celsius      ;
+;     Junction-to-Case thermal resistance     ; 4.70 degrees Celsius/Watt ;
+;     Case-to-Heat Sink thermal resistance    ; 0.10 degrees Celsius/Watt ;
+;     Heat Sink-to-Ambient thermal resistance ; 3.50 degrees Celsius/Watt ;
+;                                             ;                           ;
+; Board model used                            ; None                      ;
++---------------------------------------------+---------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block                                                                                                           ;
++------------+------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+; Block Name ; Block Type ; Total Thermal Power ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ;
++------------+------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+(1) The "Thermal Power Dissipation by Block" Table has been hidden. To show this table, please select the "Write power dissipation by block to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block Type                                                                                                                                                                            ;
++---------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; Block Type          ; Total Thermal Power by Block Type ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ; Block Average Toggle Rate (millions of transitions / sec) ;
++---------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; Combinational cell  ; 0.17 mW                           ; 0.09 mW                     ; --                             ; 0.08 mW                       ;    4.206                                                  ;
+; Clock control block ; 1.11 mW                           ; 0.00 mW                     ; --                             ; 1.11 mW                       ;  100.000                                                  ;
+; Register cell       ; 0.13 mW                           ; 0.09 mW                     ; --                             ; 0.04 mW                       ;    6.250                                                  ;
+; I/O                 ; 5.50 mW                           ; 5.01 mW                     ; 0.33 mW                        ; 0.16 mW                       ;    5.566                                                  ;
++---------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+(1) The "Block Thermal Static Power" for all block types except Pins and the Voltage Regulator, if one exists, is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Hierarchy                                                                                                                                                                                                                           ;
++-------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+---------------------------------------------------------------------------+
+; Compilation Hierarchy Node          ; Total Thermal Power by Hierarchy (1) ; Block Thermal Dynamic Power (1) ; Block Thermal Static Power (1)(2) ; Routing Thermal Dynamic Power (1) ; Full Hierarchy Name                                                       ;
++-------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+---------------------------------------------------------------------------+
+; |adder2                             ; 6.92 mW (6.62 mW)                    ; 5.20 mW (5.01 mW)               ; 0.33 mW (0.33 mW)                 ; 1.40 mW (1.28 mW)                 ; |adder2                                                                   ;
+;     |HexDriver:AHex0                ; 0.04 mW (0.04 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.03 mW (0.03 mW)                 ; |adder2|HexDriver:AHex0                                                   ;
+;     |HexDriver:AHex1                ; 0.03 mW (0.03 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.02 mW (0.02 mW)                 ; |adder2|HexDriver:AHex1                                                   ;
+;     |HexDriver:BHex0                ; 0.02 mW (0.02 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |adder2|HexDriver:BHex0                                                   ;
+;     |HexDriver:BHex1                ; 0.02 mW (0.02 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |adder2|HexDriver:BHex1                                                   ;
+;     |HexDriver:BHex2                ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |adder2|HexDriver:BHex2                                                   ;
+;     |HexDriver:BHex3                ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |adder2|HexDriver:BHex3                                                   ;
+;     |select_adder:adders            ; 0.03 mW (0.00 mW)                    ; 0.03 mW (0.00 mW)               ; --                                ; 0.01 mW (0.00 mW)                 ; |adder2|select_adder:adders                                               ;
+;         |ripple_adder_4:s_adder1    ; 0.01 mW (0.00 mW)                    ; 0.01 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |adder2|select_adder:adders|ripple_adder_4:s_adder1                       ;
+;             |full_adder:f_adder1    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |adder2|select_adder:adders|ripple_adder_4:s_adder1|full_adder:f_adder1   ;
+;             |full_adder:f_adder2    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |adder2|select_adder:adders|ripple_adder_4:s_adder1|full_adder:f_adder2   ;
+;             |full_adder:f_adder3    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |adder2|select_adder:adders|ripple_adder_4:s_adder1|full_adder:f_adder3   ;
+;             |full_adder:f_adder4    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |adder2|select_adder:adders|ripple_adder_4:s_adder1|full_adder:f_adder4   ;
+;         |select_adder_4:s_adder2    ; 0.01 mW (0.00 mW)                    ; 0.01 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |adder2|select_adder:adders|select_adder_4:s_adder2                       ;
+;             |full_adder:f_adder0_2  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |adder2|select_adder:adders|select_adder_4:s_adder2|full_adder:f_adder0_2 ;
+;             |full_adder:f_adder0_3  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |adder2|select_adder:adders|select_adder_4:s_adder2|full_adder:f_adder0_3 ;
+;             |full_adder:f_adder1_2  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |adder2|select_adder:adders|select_adder_4:s_adder2|full_adder:f_adder1_2 ;
+;             |full_adder:f_adder1_3  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |adder2|select_adder:adders|select_adder_4:s_adder2|full_adder:f_adder1_3 ;
+;             |full_adder:f_adder1_4  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |adder2|select_adder:adders|select_adder_4:s_adder2|full_adder:f_adder1_4 ;
+;         |select_adder_4:s_adder3    ; 0.01 mW (0.00 mW)                    ; 0.01 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |adder2|select_adder:adders|select_adder_4:s_adder3                       ;
+;             |full_adder:f_adder0_2  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |adder2|select_adder:adders|select_adder_4:s_adder3|full_adder:f_adder0_2 ;
+;             |full_adder:f_adder1_2  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |adder2|select_adder:adders|select_adder_4:s_adder3|full_adder:f_adder1_2 ;
+;         |select_adder_4:s_adder4    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |adder2|select_adder:adders|select_adder_4:s_adder4                       ;
+;             |full_adder:f_adder1_2  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |adder2|select_adder:adders|select_adder_4:s_adder4|full_adder:f_adder1_2 ;
+;             |full_adder:f_adder1_3  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |adder2|select_adder:adders|select_adder_4:s_adder4|full_adder:f_adder1_3 ;
+;             |full_adder:f_adder1_4  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |adder2|select_adder:adders|select_adder_4:s_adder4|full_adder:f_adder1_4 ;
+;     |hard_block:auto_generated_inst ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |adder2|hard_block:auto_generated_inst                                    ;
+;     |reg_17:reg_unit                ; 0.10 mW (0.10 mW)                    ; 0.07 mW (0.07 mW)               ; --                                ; 0.03 mW (0.03 mW)                 ; |adder2|reg_17:reg_unit                                                   ;
+;     |router:route                   ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |adder2|router:route                                                      ;
+;     |control:run_once               ; 0.03 mW (0.03 mW)                    ; 0.03 mW (0.03 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |adder2|control:run_once                                                  ;
++-------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+---------------------------------------------------------------------------+
+(1) Value in parentheses is the power consumed at that level of hierarchy. Value not in parentheses is the power consumed at that level of hierarchy plus the power consumed by all levels of hierarchy below it.
+
+(2) The "Block Thermal Static Power" for all levels of hierarchy except the top-level hierarchy is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++--------------------------------------------------------------------+
+; Core Dynamic Thermal Power Dissipation by Clock Domain             ;
++-----------------+-----------------------+--------------------------+
+; Clock Domain    ; Clock Frequency (MHz) ; Total Core Dynamic Power ;
++-----------------+-----------------------+--------------------------+
+; Clk             ; 50.00                 ; 1.52                     ;
+; No clock domain ; 0.00                  ; 0.07                     ;
++-----------------+-----------------------+--------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Current Drawn from Voltage Supplies Summary                                                                                        ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; Voltage Supply ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCC            ; 13.22 mA                ; 1.45 mA                   ; 11.78 mA                 ; 13.22 mA                         ;
+; VCCIO          ; 5.50 mA                 ; 1.93 mA                   ; 3.58 mA                  ; 5.50 mA                          ;
+; VCCA           ; 25.80 mA                ; 0.00 mA                   ; 25.80 mA                 ; 25.80 mA                         ;
+; VCCD_PLL       ; 9.25 mA                 ; 0.00 mA                   ; 9.25 mA                  ; 9.25 mA                          ;
+; VCCINT         ; 0.21 mA                 ; 0.00 mA                   ; 0.21 mA                  ; 0.21 mA                          ;
+; VCCA_ADC       ; 0.00 mA                 ; 0.00 mA                   ; 0.00 mA                  ; 0.00 mA                          ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
+
+
++-----------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by I/O Bank                                                        ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; I/O Bank ; VCCIO Voltage ; Total Current Drawn ; Dynamic Current Drawn ; Static Current Drawn ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; 1A       ; 2.5V          ; 0.38 mA             ; 0.00 mA               ; 0.38 mA              ;
+; 1B       ; 2.5V          ; 0.39 mA             ; 0.00 mA               ; 0.39 mA              ;
+; 2        ; 2.5V          ; 0.38 mA             ; 0.00 mA               ; 0.38 mA              ;
+; 3        ; 2.5V          ; 0.43 mA             ; 0.05 mA               ; 0.38 mA              ;
+; 4        ; 2.5V          ; 0.38 mA             ; 0.00 mA               ; 0.38 mA              ;
+; 5        ; 2.5V          ; 0.38 mA             ; 0.00 mA               ; 0.38 mA              ;
+; 6        ; 2.5V          ; 1.03 mA             ; 0.58 mA               ; 0.45 mA              ;
+; 7        ; 2.5V          ; 1.78 mA             ; 1.30 mA               ; 0.48 mA              ;
+; 8        ; 2.5V          ; 0.38 mA             ; 0.00 mA               ; 0.38 mA              ;
++----------+---------------+---------------------+-----------------------+----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by Voltage                                                                                             ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCIO Voltage ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; 2.5V          ; 5.50 mA                 ; 1.93 mA                   ; 3.58 mA                  ; 5.50 mA                          ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Confidence Metric Details                                                                                                                       ;
++----------------------------------------------------------------------------------------+-------------+------------+-------------+---------------+
+; Data Source                                                                            ; Total       ; Pin        ; Registered  ; Combinational ;
++----------------------------------------------------------------------------------------+-------------+------------+-------------+---------------+
+; Simulation (from file)                                                                 ;             ;            ;             ;               ;
+;     -- Number of signals with Toggle Rate from Simulation                              ; 0 (0.0%)    ; 0 (0.0%)   ; 0 (0.0%)    ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Simulation                       ; 0 (0.0%)    ; 0 (0.0%)   ; 0 (0.0%)    ; 0 (0.0%)      ;
+;                                                                                        ;             ;            ;             ;               ;
+; Node, entity or clock assignment                                                       ;             ;            ;             ;               ;
+;     -- Number of signals with Toggle Rate from Node, entity or clock assignment        ; 2 (0.8%)    ; 1 (1.4%)   ; 0 (0.0%)    ; 1 (0.7%)      ;
+;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 2 (0.8%)    ; 1 (1.4%)   ; 0 (0.0%)    ; 1 (0.7%)      ;
+;                                                                                        ;             ;            ;             ;               ;
+; Vectorless estimation                                                                  ;             ;            ;             ;               ;
+;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 222 (91.7%) ; 54 (74.0%) ; 20 (100.0%) ; 148 (99.3%)   ;
+;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 17 (7.0%)   ; 8 (11.0%)  ; 0 (0.0%)    ; 9 (6.0%)      ;
+;     -- Number of signals with Static Probability from Vectorless estimation            ; 222 (91.7%) ; 54 (74.0%) ; 20 (100.0%) ; 148 (99.3%)   ;
+;                                                                                        ;             ;            ;             ;               ;
+; Default assignment                                                                     ;             ;            ;             ;               ;
+;     -- Number of signals with Toggle Rate from Default assignment                      ; 11 (4.5%)   ; 11 (15.1%) ; 0 (0.0%)    ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Default assignment               ; 18 (7.4%)   ; 18 (24.7%) ; 0 (0.0%)    ; 0 (0.0%)      ;
+;                                                                                        ;             ;            ;             ;               ;
+; Assumed 0                                                                              ;             ;            ;             ;               ;
+;     -- Number of signals with Toggle Rate assumed 0                                    ; 7 (2.9%)    ; 7 (9.6%)   ; 0 (0.0%)    ; 0 (0.0%)      ;
++----------------------------------------------------------------------------------------+-------------+------------+-------------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Activities                                                                                                                           ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+; Signal ; Type ; Toggle Rate (millions of transitions / sec) ; Toggle Rate Data Source ; Static Probability ; Static Probability Data Source ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+(1) The "Signal Activity" Table has been hidden. To show this table, please select the "Write signal activities to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++-------------------------+
+; Power Analyzer Messages ;
++-------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Power Analyzer
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Tue Sep 27 00:47:40 2022
+Info: Command: quartus_pow --read_settings_files=off --write_settings_files=off lab_3 -c lab_3
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (332104): Reading SDC File: 'lab_3.out.sdc'
+Info (332104): Reading SDC File: 'clock_stuff.sdc'
+Warning (332043): Overwriting existing clock: Clk
+Warning (332054): Assignment set_input_delay is accepted but has some problems at clock_stuff.sdc(3): Set_input_delay/set_output_delay has replaced one or more delays on port "SW[3]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 3
+    Info (332050): set_input_delay -clock {Clk} -max 3 [all_inputs] File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 3
+Warning (332054): Assignment set_input_delay is accepted but has some problems at clock_stuff.sdc(3): Set_input_delay/set_output_delay has replaced one or more delays on port "SW[0]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 3
+Warning (332054): Assignment set_input_delay is accepted but has some problems at clock_stuff.sdc(3): Set_input_delay/set_output_delay has replaced one or more delays on port "SW[1]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 3
+Warning (332054): Assignment set_input_delay is accepted but has some problems at clock_stuff.sdc(3): Set_input_delay/set_output_delay has replaced one or more delays on port "SW[2]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 3
+Warning (332054): Assignment set_input_delay is accepted but has some problems at clock_stuff.sdc(3): Set_input_delay/set_output_delay has replaced one or more delays on port "SW[4]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 3
+Warning (332054): Assignment set_input_delay is accepted but has some problems at clock_stuff.sdc(3): Set_input_delay/set_output_delay has replaced one or more delays on port "SW[5]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 3
+Warning (332054): Assignment set_input_delay is accepted but has some problems at clock_stuff.sdc(3): Set_input_delay/set_output_delay has replaced one or more delays on port "SW[6]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 3
+Warning (332054): Assignment set_input_delay is accepted but has some problems at clock_stuff.sdc(3): Set_input_delay/set_output_delay has replaced one or more delays on port "SW[7]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 3
+Warning (332054): Assignment set_input_delay is accepted but has some problems at clock_stuff.sdc(3): Set_input_delay/set_output_delay has replaced one or more delays on port "SW[8]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 3
+Warning (332054): Assignment set_input_delay is accepted but has some problems at clock_stuff.sdc(3): Set_input_delay/set_output_delay has replaced one or more delays on port "SW[9]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 3
+Warning (332054): Assignment set_input_delay is accepted but has some problems at clock_stuff.sdc(4): Set_input_delay/set_output_delay has replaced one or more delays on port "SW[3]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 4
+    Info (332050): set_input_delay -clock {Clk} -min 2 [all_inputs] File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 4
+Warning (332054): Assignment set_input_delay is accepted but has some problems at clock_stuff.sdc(4): Set_input_delay/set_output_delay has replaced one or more delays on port "SW[0]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 4
+Warning (332054): Assignment set_input_delay is accepted but has some problems at clock_stuff.sdc(4): Set_input_delay/set_output_delay has replaced one or more delays on port "SW[1]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 4
+Warning (332054): Assignment set_input_delay is accepted but has some problems at clock_stuff.sdc(4): Set_input_delay/set_output_delay has replaced one or more delays on port "SW[2]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 4
+Warning (332054): Assignment set_input_delay is accepted but has some problems at clock_stuff.sdc(4): Set_input_delay/set_output_delay has replaced one or more delays on port "SW[4]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 4
+Warning (332054): Assignment set_input_delay is accepted but has some problems at clock_stuff.sdc(4): Set_input_delay/set_output_delay has replaced one or more delays on port "SW[5]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 4
+Warning (332054): Assignment set_input_delay is accepted but has some problems at clock_stuff.sdc(4): Set_input_delay/set_output_delay has replaced one or more delays on port "SW[6]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 4
+Warning (332054): Assignment set_input_delay is accepted but has some problems at clock_stuff.sdc(4): Set_input_delay/set_output_delay has replaced one or more delays on port "SW[7]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 4
+Warning (332054): Assignment set_input_delay is accepted but has some problems at clock_stuff.sdc(4): Set_input_delay/set_output_delay has replaced one or more delays on port "SW[8]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 4
+Warning (332054): Assignment set_input_delay is accepted but has some problems at clock_stuff.sdc(4): Set_input_delay/set_output_delay has replaced one or more delays on port "SW[9]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 4
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX0[0]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+    Info (332050): set_output_delay -clock {Clk} 2 [all_outputs] File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX0[1]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX0[2]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX0[3]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX0[4]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX0[5]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX0[6]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX1[0]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX1[1]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX1[2]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX1[3]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX1[4]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX1[5]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX1[6]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX2[0]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX2[1]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX2[2]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX2[3]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX2[4]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX2[5]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX2[6]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX3[0]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX3[1]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX3[2]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX3[3]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX3[4]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX3[5]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX3[6]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX4[0]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX4[1]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX4[2]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX4[3]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX4[4]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX4[5]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX4[6]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX5[0]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX5[1]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX5[2]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX5[3]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX5[4]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX5[5]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Warning (332054): Assignment set_output_delay is accepted but has some problems at clock_stuff.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "HEX5[6]". Please use -add_delay option if you meant to add additional constraints. File: C:/intelFPGA_lite/18.1/Documents/ECE385/lab_3/clock_stuff.sdc Line: 6
+Critical Warning (332168): The following clock transfers have no clock uncertainty assignment. For more accurate results, apply clock uncertainty assignments or use the derive_clock_uncertainty command.
+    Critical Warning (332169): From Clk (Rise) to Clk (Rise) (setup and hold)
+Info (223000): Starting Vectorless Power Activity Estimation
+Warning (222013): Relative toggle rates could not be calculated because no clock domain could be identified for some nodes
+Info (223001): Completed Vectorless Power Activity Estimation
+Info (218000): Using Advanced I/O Power to simulate I/O buffers with the specified board trace model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (215049): Average toggle rate for this design is 5.547 millions of transitions / sec
+Info (215031): Total thermal power estimate for the design is 105.34 mW
+Info: Quartus Prime Power Analyzer was successful. 0 errors, 67 warnings
+    Info: Peak virtual memory: 4852 megabytes
+    Info: Processing ended: Tue Sep 27 00:47:45 2022
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
+
+

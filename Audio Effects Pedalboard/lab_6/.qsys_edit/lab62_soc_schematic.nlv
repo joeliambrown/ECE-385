@@ -1,0 +1,53 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst lab62_soc.sysid_qsys_0 -pg 1 -lvl 3 -y 1040
+preplace inst lab62_soc.nios2_gen2_0 -pg 1 -lvl 2 -y 240
+preplace inst lab62_soc.key_code -pg 1 -lvl 3 -y 1220
+preplace inst lab62_soc.sdram_pll -pg 1 -lvl 3 -y 520
+preplace inst lab62_soc.jtag_uart_0 -pg 1 -lvl 3 -y 720
+preplace inst lab62_soc.nios2_gen2_0.cpu -pg 1
+preplace inst lab62_soc.Key0 -pg 1 -lvl 3 -y 130
+preplace inst lab62_soc.usb_rst -pg 1 -lvl 3 -y 1700
+preplace inst lab62_soc.key -pg 1 -lvl 3 -y 1120
+preplace inst lab62_soc.Key1 -pg 1 -lvl 3 -y 300
+preplace inst lab62_soc.leds_pio -pg 1 -lvl 3 -y 1400
+preplace inst lab62_soc.usb_irq -pg 1 -lvl 3 -y 1600
+preplace inst lab62_soc.usb_gpx -pg 1 -lvl 3 -y 1500
+preplace inst lab62_soc.hex_digits_pio -pg 1 -lvl 3 -y 1800
+preplace inst lab62_soc.clk_0 -pg 1 -lvl 1 -y 90
+preplace inst lab62_soc.sdram -pg 1 -lvl 3 -y 600
+preplace inst lab62_soc.nios2_gen2_0.reset_bridge -pg 1
+preplace inst lab62_soc.Accumulate -pg 1 -lvl 3 -y 30
+preplace inst lab62_soc.spi_0 -pg 1 -lvl 3 -y 820
+preplace inst lab62_soc.nios2_gen2_0.clock_bridge -pg 1
+preplace inst lab62_soc.VGA_text_mode_controller_0 -pg 1 -lvl 4 -y 210
+preplace inst lab62_soc.onchip_memory2_0 -pg 1 -lvl 3 -y 1320
+preplace inst lab62_soc.timer_0 -pg 1 -lvl 3 -y 940
+preplace inst lab62_soc.i2c_0 -pg 1 -lvl 3 -y 400
+preplace inst lab62_soc.SW -pg 1 -lvl 3 -y 1900
+preplace inst lab62_soc -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc EXPORT<net_container>lab62_soc</net_container>(SLAVE)usb_gpx.external_connection,(SLAVE)lab62_soc.usb_gpx) 1 0 3 NJ 1530 NJ 1530 NJ
+preplace netloc EXPORT<net_container>lab62_soc</net_container>(SLAVE)lab62_soc.spi0,(SLAVE)spi_0.external) 1 0 3 NJ 850 NJ 850 NJ
+preplace netloc EXPORT<net_container>lab62_soc</net_container>(MASTER)lab62_soc.sdram_clk,(MASTER)sdram_pll.c1) 1 3 2 NJ 550 NJ
+preplace netloc EXPORT<net_container>lab62_soc</net_container>(SLAVE)Key0.external_connection,(SLAVE)lab62_soc.key0_wire) 1 0 3 NJ 80 NJ 80 NJ
+preplace netloc EXPORT<net_container>lab62_soc</net_container>(SLAVE)lab62_soc.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+preplace netloc EXPORT<net_container>lab62_soc</net_container>(SLAVE)lab62_soc.sdram_wire,(SLAVE)sdram.wire) 1 0 3 NJ 670 NJ 670 NJ
+preplace netloc EXPORT<net_container>lab62_soc</net_container>(SLAVE)key.external_connection,(SLAVE)lab62_soc.key_external_connection) 1 0 3 NJ 1150 NJ 1150 NJ
+preplace netloc FAN_OUT<net_container>lab62_soc</net_container>(MASTER)sdram_pll.c0,(SLAVE)sdram.clk,(SLAVE)VGA_text_mode_controller_0.CLK) 1 2 2 880 710 1140
+preplace netloc EXPORT<net_container>lab62_soc</net_container>(SLAVE)usb_rst.external_connection,(SLAVE)lab62_soc.usb_rst) 1 0 3 NJ 1730 NJ 1730 NJ
+preplace netloc EXPORT<net_container>lab62_soc</net_container>(SLAVE)lab62_soc.leds,(SLAVE)leds_pio.external_connection) 1 0 3 NJ 1430 NJ 1430 NJ
+preplace netloc EXPORT<net_container>lab62_soc</net_container>(SLAVE)i2c_0.i2c_serial,(SLAVE)lab62_soc.i2c_wire) 1 0 3 NJ 470 NJ 470 NJ
+preplace netloc FAN_OUT<net_container>lab62_soc</net_container>(SLAVE)usb_irq.clk,(SLAVE)Key1.clk,(SLAVE)sysid_qsys_0.clk,(SLAVE)onchip_memory2_0.clk1,(SLAVE)spi_0.clk,(SLAVE)usb_gpx.clk,(MASTER)clk_0.clk,(SLAVE)nios2_gen2_0.clk,(SLAVE)key_code.clk,(SLAVE)leds_pio.clk,(SLAVE)i2c_0.clock,(SLAVE)key.clk,(SLAVE)sdram_pll.inclk_interface,(SLAVE)timer_0.clk,(SLAVE)jtag_uart_0.clk,(SLAVE)Key0.clk,(SLAVE)SW.clk,(SLAVE)usb_rst.clk,(SLAVE)Accumulate.clk,(SLAVE)hex_digits_pio.clk) 1 1 2 400 100 800
+preplace netloc INTERCONNECT<net_container>lab62_soc</net_container>(SLAVE)Key0.s1,(SLAVE)i2c_0.csr,(SLAVE)Accumulate.s1,(SLAVE)usb_gpx.s1,(SLAVE)SW.s1,(SLAVE)leds_pio.s1,(SLAVE)nios2_gen2_0.debug_mem_slave,(SLAVE)VGA_text_mode_controller_0.avl_mm_slave,(SLAVE)usb_irq.s1,(SLAVE)usb_rst.s1,(SLAVE)Key1.s1,(SLAVE)hex_digits_pio.s1,(SLAVE)key.s1,(SLAVE)spi_0.spi_control_port,(SLAVE)sdram.s1,(SLAVE)key_code.s1,(SLAVE)timer_0.s1,(MASTER)nios2_gen2_0.instruction_master,(SLAVE)sdram_pll.pll_slave,(MASTER)nios2_gen2_0.data_master,(SLAVE)onchip_memory2_0.s1,(SLAVE)jtag_uart_0.avalon_jtag_slave,(SLAVE)sysid_qsys_0.control_slave) 1 1 3 380 1290 860 290 NJ
+preplace netloc EXPORT<net_container>lab62_soc</net_container>(SLAVE)VGA_text_mode_controller_0.VGA_port,(SLAVE)lab62_soc.vga_port) 1 0 4 NJ 160 NJ 120 NJ 270 NJ
+preplace netloc INTERCONNECT<net_container>lab62_soc</net_container>(SLAVE)jtag_uart_0.reset,(SLAVE)SW.reset,(MASTER)nios2_gen2_0.debug_reset_request,(SLAVE)Accumulate.reset,(SLAVE)Key0.reset,(MASTER)clk_0.clk_reset,(SLAVE)usb_irq.reset,(SLAVE)usb_rst.reset,(SLAVE)spi_0.reset,(SLAVE)key_code.reset,(SLAVE)timer_0.reset,(SLAVE)hex_digits_pio.reset,(SLAVE)Key1.reset,(SLAVE)i2c_0.reset_sink,(SLAVE)sdram.reset,(SLAVE)sdram_pll.inclk_interface_reset,(SLAVE)nios2_gen2_0.reset,(SLAVE)key.reset,(SLAVE)onchip_memory2_0.reset1,(SLAVE)VGA_text_mode_controller_0.RESET,(SLAVE)sysid_qsys_0.reset,(SLAVE)usb_gpx.reset,(SLAVE)leds_pio.reset) 1 1 3 360 1270 840 240 NJ
+preplace netloc EXPORT<net_container>lab62_soc</net_container>(SLAVE)lab62_soc.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>lab62_soc</net_container>(SLAVE)Accumulate.external_connection,(SLAVE)lab62_soc.acc_wire) 1 0 3 NJ 60 NJ 60 NJ
+preplace netloc FAN_OUT<net_container>lab62_soc</net_container>(SLAVE)spi_0.irq,(SLAVE)i2c_0.interrupt_sender,(SLAVE)timer_0.irq,(MASTER)nios2_gen2_0.irq,(SLAVE)jtag_uart_0.irq) 1 2 1 780
+preplace netloc EXPORT<net_container>lab62_soc</net_container>(SLAVE)usb_irq.external_connection,(SLAVE)lab62_soc.usb_irq) 1 0 3 NJ 1630 NJ 1630 NJ
+preplace netloc EXPORT<net_container>lab62_soc</net_container>(SLAVE)SW.external_connection,(SLAVE)lab62_soc.sw_wire) 1 0 3 NJ 1930 NJ 1930 NJ
+preplace netloc EXPORT<net_container>lab62_soc</net_container>(SLAVE)lab62_soc.keycode,(SLAVE)key_code.external_connection) 1 0 3 NJ 1250 NJ 1250 NJ
+preplace netloc EXPORT<net_container>lab62_soc</net_container>(SLAVE)lab62_soc.key1_wire,(SLAVE)Key1.external_connection) 1 0 3 NJ 380 NJ 380 NJ
+preplace netloc EXPORT<net_container>lab62_soc</net_container>(SLAVE)lab62_soc.hex_digits,(SLAVE)hex_digits_pio.external_connection) 1 0 3 NJ 1830 NJ 1830 NJ
+levelinfo -pg 1 0 150 1440
+levelinfo -hier lab62_soc 160 190 540 930 1210 1350
