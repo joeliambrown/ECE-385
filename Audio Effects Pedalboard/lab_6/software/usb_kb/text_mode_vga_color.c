@@ -5,6 +5,10 @@
  *
  *  Created on: Oct 25, 2021
  *      Author: zuofu
+ *
+ *  Original VGA Support code structure altered for use as 
+ *  main function in guitar effects pedal: November 14, 2022
+ *  	Author: Joseph Brown
  */
 
 #include <system.h>
